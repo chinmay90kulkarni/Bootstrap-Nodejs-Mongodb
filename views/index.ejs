@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MongoDB and Nodejs Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h2><b>Node JS And MongoDB Connection</b></h2>
+  
+</div>
+  
+<div class="container">
+  <div class="row">
+     
+    <ul class="nav nav-tabs">
+          <li class="active"><a href="/login">Authentication</a></li>
+          <li><a href="http://localhost:3000/">Home</a></li>
+          <li><a href="/ExtraBootstrapConcept">Bootstrap</a></li>
+    </ul>
+
+    <div class="col-md-3 col-md-offset-0">
+      <h3>Insert Form</h3>
+        <p>
+        
+            <form action="/insert" method="post">
+                <div class="form-group">
+                  <label for="Name">Enter Name :</label>
+                  <input type="text" class="form-control" name = "name">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+             
+            </form>
+        </p>
+    </div>
+    
+    <div class="col-md-3 col-sm-offset-1">
+      <h3><b>Display Data</b></h3>
+        <p> 
+            <form action ="/display" method="post">
+              <div class="form-group">
+                  <label for="Name">Show all Data :</label>
+                  <button type="submit" class="btn btn-default">Show all</button>
+                  
+              </div>
+            </form>
+        </p> 
+    </div>        
+
+    <div class="col-md-3 col-sm-offset-1">
+      <h3>Delete All</h3>        
+      <p> 
+          <form action ="/remove" method="post">
+            <div class="form-group">
+                <label for="Name">Remove All Data :</label>
+              <button type="submit" class="btn btn-default">Remove All</button>  
+            </div>
+          </form>
+     </p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
